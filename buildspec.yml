@@ -23,7 +23,6 @@ commands:
 - npm test
 
 artifacts:
-
 files:
 
 - src/**/*

@@ -72,21 +72,21 @@ describe('quiz.nextStageAsync()', function () {
             const instance = saveInstance.firstCall.args[0];
             expect(instance.players.map(p => p.score)).to.have.members([0, 0, 0]);
         });
-        /*  
-                it('should reject request if no players yet', async function () {
-                    instanceBefore.players = []; // No players yet
-                    await expect(quiz.nextStageAsync('1234')).to.eventually.be.rejectedWith('Not enough players yet');
-                    expect(saveInstance.notCalled).to.be.true;
-                });
-                       it('should reject request if only one player', async function () {
-                
-                            instanceBefore.players = [{ name: "Player 1" }]; // One players
-                
-                            await expect(quiz.nextStageAsync('1234')).to.eventually.be.rejectedWith('Not enough players yet');
-                
-                            expect(saveInstance.notCalled).to.be.true;
-                
-                        }); */
+
+        /* it('should reject request if no players yet', async function () {
+            instanceBefore.players = []; // No players yet
+            await expect(quiz.nextStageAsync('1234')).to.eventually.be.rejectedWith('Not enough players yet');
+            expect(saveInstance.notCalled).to.be.true;
+        });
+        it('should reject request if only one player', async function () {
+
+            instanceBefore.players = [{ name: "Player 1" }]; // One players
+
+            await expect(quiz.nextStageAsync('1234')).to.eventually.be.rejectedWith('Not enough players yet');
+
+            expect(saveInstance.notCalled).to.be.true;
+
+        }); */
     });
 
     describe('when showing question', function () {
